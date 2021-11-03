@@ -1,10 +1,10 @@
-# project-awwards
+# WelcomeToTheHood
 
 ## Author
 Roy Rasugu 
   
 ## Description  
-This project allows users to post their projects for other users to rate according to design, usability and content
+A web application that allows you to be in the loop about everything happening in your neighborhood. From contact information of different handyman to meeting announcements.
 
 ##  Live Link  
  Click [View Site](https://wleomehood.herokuapp.com/)  to visit the site
