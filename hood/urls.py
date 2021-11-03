@@ -2,5 +2,6 @@ from django.urls import path
 from hood import views
 
 urlpatterns = [
-    path('', views.home, name='home')
+    path('', views.registration, name='registration'),
+    path('home', views.home, name='home')
 ]
