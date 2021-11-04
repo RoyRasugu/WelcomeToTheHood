@@ -22,8 +22,6 @@ def UniqueUser(value):
 		raise ValidationError('User with this username already exists.')
 
 class SignupForm(forms.ModelForm):
-    firstname = forms.CharField(widget=forms.Textarea(attrs={'class': 'input is-medium'}), max_length=30, required=True,)
-    lastname = forms.CharField(widget=forms.Textarea(attrs={'class': 'input is-medium'}), max_length=30, required=True,)
     username = forms.CharField(widget=forms.Textarea(attrs={'class': 'input is-medium'}), max_length=30, required=True,)
     email = forms.CharField(widget=forms.Textarea(attrs={'class': 'input is-medium'}), max_length=100, required=True,)
     password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'input is-medium'}),)
@@ -32,7 +30,7 @@ class SignupForm(forms.ModelForm):
     class Meta:
         
         model = User
-        fields = ('firstname', 'lastname', 'username', 'email', 'password')
+        fields = ('username', 'email', 'password')
         
         def __init__(self, *args, **kwargs):
             super(SignupForm, self).__init__(*args, **kwargs)
